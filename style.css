@@ -1,0 +1,102 @@
+@import url("https://fonts.googleapis.com/css2?family=Ultra&display=swap");
+
+body {
+  font-size: 10vw;
+  background-color: #ffffff;
+  margin: 100px;
+  font-family: "Ultra", serif;
+}
+
+.hack {
+  display: flex;
+  align-items: center;
+  gap: 5%;
+  justify-content: space-around;
+  max-height: 100px;
+  text-align: center;
+}
+
+@keyframes fontGrow {
+  0% {
+    transform: scaleY(1);
+  }
+  50% {
+    transform: scaleY(2);
+  }
+  100% {
+    transform: scaleY(1);
+  }
+}
+
+.hack-letters {
+  animation-name: fontGrow;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  transform-origin: top;
+  transition-timing-function: ease-in-out;
+}
+
+.letter-h {
+  color: #fe96b7;
+}
+
+.letter-a {
+  color: #b8d953;
+  animation-delay: 1s;
+}
+
+.letter-c {
+  color: #bb86e9;
+}
+
+.letter-k {
+  color: #b2b2eb;
+  animation-delay: 1s;
+}
+
+.club {
+  display: flex;
+  justify-content: space-around;
+  gap: 5%;
+}
+
+@keyframes goupanddown {
+  0% {
+    transform: scaleY(2);
+  }
+  50% {
+    transform: scaleY(1);
+  }
+  100% {
+    transform: scaleY(2);
+  }
+}
+
+.club-letters {
+  animation-name: goupanddown;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  transform-origin: bottom;
+  transition-timing-function: ease-in-out;
+  
+}
+
+.letter-C {
+  color: #cbe69f;
+}
+
+.letter-l {
+  color: #ccbbee;
+  animation-delay: 1s;
+  font-stretch: ultra-condensed;
+}
+
+.letter-u {
+  color: #91d1df;
+}
+
+.letter-b {
+  color: #f7b407;
+  animation-delay: 1s;
+}
+
